@@ -1,0 +1,60 @@
+[
+    {
+        "name": "Strawberry Crepes",
+        "image" : "desser1.jpg",
+        "categories": "Dessert"
+    },
+     
+    {
+        "name": "French Toast",
+        "image" : "desser3.jpg",
+        "categories": "Dessert"
+    },
+     
+    {
+        "name": "Chocolate Charlotte",
+        "image" : "desser2.jpg",
+        "categories": "Dessert"
+    },
+    {
+        "name": "Pizzas",
+        "image" : "enter.jpg",
+        "categories": "Fastfood"
+    },
+
+    {
+        "name": "Chocolate mousse and Oreo verrine.",
+        "image" : "desser4.jpg",
+        "categories": "Dessert"
+    },
+     
+    {
+        "name": "Burger",
+        "image" : "enter2.jpg",
+        "categories": "Fastfood"
+    },
+     
+    {
+        "name": "Tacos",
+        "image" : "enter3.jpg",
+        "categories": "Fastfood"
+    },
+     
+    {
+        "name": "Mini-hot dogs",
+        "image" : "kids3.jpg",
+        "categories": "Kids"
+    },
+     
+    {
+        "name": "Fried chicken served with fries",
+        "image" : "kids1.jpg",
+        "categories": "Kids"
+    },
+    
+    {
+        "name": "Breaded mozzarella sticks",
+        "image" : "kids2.jpg",
+        "categories": "Kids"
+    }
+]

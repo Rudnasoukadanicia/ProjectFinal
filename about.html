@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page showcase the gastronomy and culinary identity of The Delice Resto, including menu and contact information.">
+    <meta name="author" content="Ruda Danicia Souka">
+    <title>The Delice Resto</title>
+
+    <!-- open graph -->
+    <meta property="og:title" content="The Delice Resto">
+    <meta property="og:description" content="Current homepage, weather events and business directory of the Dolisie Chamber of Commerce.">
+    <meta property="og:image" content="https://rudnasoukadanicia.github.io/wdd231/finalproject/images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rudnasoukadanicia.github.io/wdd231/finalproject/about.html">
+
+    <!-- Icon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- link of fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- link of cs -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    
+    <!-- link of js-->
+    <script src="scripts/script.js" defer></script>
+     
+    
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <img src="images/logo_resto.webp" alt="logo of this site" width="65">
+            <h1>The Delice Resto</h1>
+        </div>
+        <!-- naviagation -->
+        <nav class="nav-bar">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <!-- button hamberger -->
+        <button id="menu" aria-label="Toggle navigation menu">☰</button>
+    </header>
+    <!-- end header -->
+
+    <!-- Main contenue -->
+
+    <main>
+        <!-- section hero -->
+        <section class="hero-section-2">
+            <div class="hero-header-2">
+                <h2>Welcome to <strong class="span">The Delice Resto</strong></h2>
+                <h2 class="span">Behind the dishes</h2>
+                <p>Experience the authentic flavors of our exquisite cuisine<br>where every dish is a masterpiece crafted with passion and tradition.</p>
+                <a href="services.html" class="btn-reserve">Reserve a Table</a>
+            </div>
+        </section>
+
+            <!-- section card -->
+        <section class="interest-about">
+            <h2>Special Monents</h2>
+            <h3>About Us</h3>
+            <div class="interest-element-about">
+                <div class="card-about">
+                    <img src="images/platsale.png" alt="platsale image" width="250">
+                </div>
+                <div class="cards">
+                    <h3>Tradional & Moderne</h3>
+                    <p>At The Delice Resto, we celebrate authentic flavors and warm hospitality—serving fresh,
+                        affordable meals crafted with passion. Our mission is to create memorable dining experiences
+                        that bring people together over delicious food in a welcoming atmosphere.
+                    </p>
+                </div>
+                <div class="card-about">
+                    <img src="images/platviande.png" alt="platsale image" width="250">
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div  class="menu-special">
+                <div class="menu-img"><img src="./images/menu.jpg" alt="picture of menu" width="200"></div>
+                <div class="special">
+                    <h3>Our special</h3>
+                   <div>
+                    <h4>Fines Tartare steak</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                   </div>
+
+                   <div>
+                    <h4>Creamy chicken soup</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                   </div>
+
+                   <div>
+                    <h4>Boiled eggs on toast</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                   </div>
+
+                   <div>
+                    <h4>Risotto & Mushrooms</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                   </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="search-section">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Search a dish...">
+            </div>
+        </section>
+        <section id="categorieFilter">
+            <ul class="navig">
+                <li><a href="#" data-filter="all">All</a></li>
+                <li><a href="#" data-filter="dessert">Deserts</a></li>
+                <li><a href="#" data-filter="fastfood">Fast-food</a></li>
+                <li><a href="#" data-filter="kids">Kids</a></li>
+            </ul>
+            <h2>Ours Categories</h2>
+            <div id="categories" class="categories">
+                <!-- The categories is inseres by Js -->
+            </div>
+           
+        </section>
+
+    </main>
+
+    <!-- Stard footer -->
+    <footer>
+        
+        <!-- About -->
+        <div class="footer-logo">
+            <img  src="images/logo_resto.webp" alt="logo_resto" width="70">
+            <p>At The Delice Resto, we celebrate authentic flavors and warm hospitality—serving fresh,
+                affordable meals crafted with passion.
+            </p>
+            <div class="image-container">
+            <h3>Follow Us</h3>
+                <a href="https://www.facebook.com"><img  class="toggle-icon" src="images/facebookOrange.png" data-alt="images/facebook.png"  alt="facebook icon"></a>
+                <a href="https://www.whatsapp.com"><img  class="toggle-icon" src="images/whatsappOrange.png" data-alt="images/whatsapp.png"  alt="whatsapp icon"></a>
+                <a href="https://www.instagram.com"><img  class="toggle-icon" src="images/instagramOrange.png" data-alt="images/instagram.png"  alt="instagram icon"> </a>
+           </div>
+        </div> 
+        <hr>
+        <div>
+            <p>&copy; The Delice Resto | Rep of Congo 2025</p>
+        </div>
+    </footer>
+    <div id="toast">Item added to cart ✅</div>
+    
+</body>
+</html>
+
+
+

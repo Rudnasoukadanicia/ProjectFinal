@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page showcase the gastronomy and culinary identity of The Delice Resto, including menu and contact information.">
+    <meta name="author" content="Ruda Danicia Souka">
+    <title>The Delice Resto</title>
+
+    <!-- open graph -->
+    <meta property="og:title" content="The Delice Resto">
+    <meta property="og:description" content="Current homepage, weather events and business directory of the Dolisie Chamber of Commerce.">
+    <meta property="og:image" content="https://rudnasoukadanicia.github.io/wdd231/finalproject/images/og-image.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rudnasoukadanicia.github.io/wdd231/finalproject/services.html">
+
+    <!-- Icon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!-- link of fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Great+Vibes&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <!-- link of cs -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/styles-large.css">
+    
+    <!-- link of js-->
+    <script src="scripts/script.js" defer></script>
+     
+    
+</head>
+
+<body>
+
+    <!-- start header -->
+    <header>
+        <!-- logo -->
+        <div class="logo">
+            <img src="images/logo_resto.webp" alt="logo of this site" width="65">
+            <h1>The Delice Resto</h1>
+        </div>
+        <!-- naviagation -->
+        <nav class="nav-bar">
+            <ul>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+        <!-- button hamberger -->
+        <button id="menu" aria-label="Toggle navigation menu">☰</button>
+    </header>
+    <!-- end header -->
+
+    <!-- Main contenue -->
+
+    <main>
+
+        <!-- section hero -->
+        <section class="intro">
+            <h2>Contact Us</h2> 
+        </section>
+
+        <section class="contact-info">
+            <h1 class="titre">The Delice Resto information</h1>
+            <address>
+                <p>Address : 22 Avenue de source</p>
+                <p>Phone number : 000-333-663-966 </p>
+                <p><a href="mailto:thedelicer01@gmail.com">thedelicer01@gmail.com </a></p>
+            </address>
+            
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15914.913274093644!2d15.251706549999996!3d-4.272947199999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2scg!4v1753703207231!5m2!1sfr!2scg"
+                width="100%" height="350" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <section class="contact-form">
+            <div>
+                <h2>Place Your Order</h2>
+                <form id="order-form" action="#" method="post">
+                    
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="address">Address</label>
+                    <textarea id="address" required></textarea>
+
+                    <textarea id="message" name="message" rows="5" placeholder="Write the message"></textarea>
+
+                    <button type="submit">Confirm Order</button>
+
+                </form>
+                <p id="order-message"></p>
+
+            </div>
+        </section>
+
+        <section class="cart">
+            <h2>🛒 My Cart</h2>
+            <ul id="cart-items"></ul>
+            <p>Total items: <span id="cart-count">0</span></p>
+            <button id="clear-cart">Clear cart</button>
+        </section>
+
+        <section class="reserve">
+            <a href="services.html" class="btn-reserve">Make a Table</a>
+        </section>
+
+        
+    </main>
+
+    <!-- Stard footer -->
+    <footer>
+        
+        <!-- About -->
+        <div class="footer-logo">
+            <img  src="images/logo_resto.webp" alt="logo_resto" width="70">
+            <p>At The Delice Resto, we celebrate authentic flavors and warm hospitality—serving fresh,
+                affordable meals crafted with passion.
+            </p>
+            <div class="image-container">
+            <h3>Follow Us</h3>
+                <a href="https://www.facebook.com"><img  class="toggle-icon" src="images/facebookOrange.png" data-alt="images/facebook.png"  alt="facebook icon"></a>
+                <a href="https://www.whatsapp.com"><img  class="toggle-icon" src="images/whatsappOrange.png" data-alt="images/whatsapp.png"  alt="whatsapp icon"></a>
+                <a href="https://www.instagram.com"><img  class="toggle-icon" src="images/instagramOrange.png" data-alt="images/instagram.png"  alt="instagram icon"> </a>
+           </div>
+        </div> 
+        <hr>
+        <div>
+            <p>&copy; The Delice Resto | Rep of Congo 2025</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
