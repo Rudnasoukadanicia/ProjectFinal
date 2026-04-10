@@ -1,9 +1,9 @@
 /* Affichage mobile */
 @media (max-width: 768px) {
 
-     /* == header and navigation == */
+    /* == header and navigation == */
 
-    header{
+    header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -11,11 +11,11 @@
         flex-wrap: wrap;
     }
 
-    .logo h1{
+    .logo h1 {
         font-size: 24px;
     }
-   
-      /* cacher le menu au départ */
+
+    /* cacher le menu au départ */
     .nav-bar ul {
         position: absolute;
         display: none;
@@ -29,8 +29,9 @@
         z-index: 1500;
 
     }
-     /* quand on clique sur ☰ */
-    .nav-bar.show  ul{
+
+    /* quand on clique sur ☰ */
+    .nav-bar.show ul {
         display: flex;
     }
 
@@ -42,11 +43,12 @@
     header {
         flex-wrap: wrap;
     }
+
     nav ul li a {
         font-size: 1.1rem;
         padding: 0.5rem;
         border-bottom: 1px solid var(--text-color);
-    } 
+    }
 
     /* hero section */
 
@@ -84,7 +86,7 @@
         font-size: 12px;
     }
 
-    .btn-nemu{
+    .btn-nemu {
         padding: 2px 4px;
         font-size: 0.5rem;
     }
@@ -100,13 +102,15 @@
     .image-container img {
         width: 30px;
     }
+
     .interest {
         max-width: 100%;
         padding: 0 1rem;
     }
 
     .interest-element {
-        flex-direction: column; /* deviens vertical */
+        flex-direction: column;
+        /* deviens vertical */
         gap: 1.5rem;
     }
 
@@ -150,6 +154,7 @@
         padding: 4px 8px;
         font-size: 0.9rem;
     }
+
     /* INTEREST ABOUT */
     .interest-about h2 {
         font-size: 22px;
@@ -344,6 +349,14 @@
         padding: 0.6rem 1.5rem;
         text-align: center;
     }
+
+    .search-bar input {
+        width: 50%;
+        max-width: 200px;
+        padding: 10px;
+        border-radius: 25px;
+        border: 1px solid var(--accent-color);
+        font-size: 14px;
+        outline: none;
+    }
 }
-
-
