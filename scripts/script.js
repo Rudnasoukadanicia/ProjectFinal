@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const categoriesContainer = document.getElementById("categories");
 
     async function loadMeals(category) {
+        categoriesContainer.innerHTML = "<p>Loading...</p>";
         try {
             const response = await fetch(
                 `https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`
@@ -106,21 +107,24 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateCartDisplay() {
         cartList.innerHTML = "";
 
-        if (cart.length === 0) {
-            cartList.innerHTML = "<li>Your cart is empty</li>";
-        } else {
-            cart.forEach(item => {
-                const li = document.createElement("li");
-                li.textContent = item;
-                cartList.appendChild(li);
-            });
-        }
-
+        cart.forEach((item, index) => {
+            const li = document.createElement("li");
+            li.innerHTML = `${item}<button class="remove-item" data-index="${index}">❌</button>`;
+            cartList.appendChild(li);
+        });
         cartCount.textContent = cart.length;
+        document.querySelectorAll(".remove-item").forEach(button => {
+            button.addEventListener("click", () => {
+                const index = button.dataset.index;
+                cart.splice(index, 1);
+                localStorage.setItem("cart", JSON.stringify(cart));
+                updateCartDisplay();
+            })
+        })
     }
 
     updateCartDisplay();
-    
+
 
     function displayMeals(meals) {
         categoriesContainer.innerHTML = "";
@@ -140,6 +144,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 cart.push(meal.strMeal);
                 localStorage.setItem("cart", JSON.stringify(cart));
                 updateCartDisplay();
+                const toast = document.getElementById("toast");
+                toast.style.display = "block";
+                setTimeout(() => {
+                    toast.style.display = "none";
+                }, 2000);
             });
 
             categoriesContainer.appendChild(card);
@@ -164,7 +173,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        const customerName = document.getElementById("name").value;
+        const customerName = document.getElementById("fullname").value;
 
         orderMessage.textContent =
             `Thank you ${customerName}, your order has been placed successfully!`;
@@ -173,6 +182,10 @@ document.addEventListener("DOMContentLoaded", () => {
         localStorage.removeItem("cart");
         updateCartDisplay();
         orderForm.reset();
+        setTimeout(() => {
+            // success message for order form
+            window.location.href = "succes.html";
+        }, 1500);
     });
 
 });

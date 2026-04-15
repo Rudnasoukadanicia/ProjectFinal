@@ -740,3 +740,10 @@ textarea {
     font-size: 14px;
     outline: none;
 }
+
+.quote-section {
+    text-align: center;
+    padding: 30px;
+    font-style: italic;
+    color: var(--accent-color);
+}
